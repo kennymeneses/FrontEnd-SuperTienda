@@ -3,7 +3,6 @@ import logo from '../logo.svg';
 import '../App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-
 const App = ()=>(
     <div className="App">
       <header className="App-header">
