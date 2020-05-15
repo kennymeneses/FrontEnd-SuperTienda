@@ -6,9 +6,9 @@ const PublicMenu = () =>{
 
     return (
         <ul className="display-menu">
-            <li className="display-menu-item"><NavLink></NavLink></li>
-            <li className="display-menu-item"><NavLink></NavLink></li>
-            <li className="display-menu-item"><NavLink></NavLink></li>
+            <li className="display-menu-item"><NavLink className="link-nav" exact to="/">Home</NavLink></li>
+            <li className="display-menu-item"><NavLink className="link-nav" exact to="/">Home</NavLink></li>
+            <li className="display-menu-item"><NavLink className="link-nav" exact to="/">Home</NavLink></li>
         </ul>
 
     )

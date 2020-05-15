@@ -5,9 +5,9 @@ import App from './components/App';
 import { Provider } from 'react-redux'
 
 ReactDOM.render(
-  <React.StrictMode>
+
     <App />
-  </React.StrictMode>,
+,
   document.getElementById('root')
 );
 
