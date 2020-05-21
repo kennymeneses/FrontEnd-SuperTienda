@@ -7,6 +7,7 @@ import Home from './pages/Home'
 const App = ()=>(
   <Router>
     <Header />
+    
       <Switch>
         <Route path="/" exact component={Home} />
 

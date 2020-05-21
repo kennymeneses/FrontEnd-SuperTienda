@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Home = ()=>(
 
-    <div className="page-content">
-
+    <div className="page-content-home">
+        Home
     </div>
 
 )
