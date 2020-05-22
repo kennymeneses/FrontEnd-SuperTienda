@@ -478,19 +478,179 @@ display: none;
   .cuadro-blue{
     height:25rem;
     width: 80rem;
-    background-color: blue;
+    background-color: white;
     position: absolute;
     bottom: -25rem;
-    margin-left:-35.75rem;
+    margin-left:-15.75rem;
     z-index: 10;
     display: none;
+    -webkit-box-shadow: 6px 10px 8px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 6px 10px 8px 1px rgba(0,0,0,0.5);
+    box-shadow: 6px 10px 8px 1px rgba(0,0,0,0.5);
+
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow: hidden;
+    
   }
   
 }
 
+@media screen and (min-width:960px)
+{
 
+  .categoria-logo{
+    display:flex;
+    width:35%;
+    height: 100%;
 
+  }
 
+  .categoria-logo-img{
+    width: 160%;
+    height: 85%;
+    bottom: 0%;
+    margin-bottom: -4%;
+    margin-top:auto;
+    margin-left: auto;
+    margin-right:auto;
+    overflow:visible;
+    
+  }
+
+  .sub-categorias-container{
+    /* justify-content: space-around; */
+    background-color: white;
+    height: 100%;
+    width: 65%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow:hidden;
+    font-size: 0.55rem;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .sub-categoria-televisores{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .sub-categoria-computadoras{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .sub-categoria-fotografia{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .sub-categoria-telefonos{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .sub-categoria-videojuegos{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .sub-categoria-audio{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .sub-categoria-pcgaming{
+    display:flex;
+    flex-direction: column;
+    height: min-content;
+    width: 19%;
+    padding: 1rem;
+    padding-top:0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:960px)
+{
+  .sub-categoria-link{
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: ease-in-out 0.5s;
+    display:flex;
+    font-size: 1rem;
+  }
+
+  .sub-categoria-link:hover{
+    text-decoration: underline;
+  }
+
+  .sub-categoria-logo{
+    width: 1rem;
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+  }
+  
+  .sub-sub-categoria-link{
+    text-decoration:none;
+    color:grey;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0.175rem;
+    white-space: nowrap;
+    transition: ease-in-out 0.3s;
+    padding-left:2rem;
+  }
+
+  .sub-sub-categoria-link:hover{
+    color:red;
+    font-size: 0.9rem;
+  }
+}
 
 
 .mobil-busqueda-container{
