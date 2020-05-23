@@ -121,11 +121,107 @@ const BannerCategories =({categories, subcategories, subsubcategories})=>{
                 </li>
 
                 <li className="display-menu-item"><NavLink className="link-categorias" to="/catalogo/muebles">Muebles</NavLink>
-                {/* <div className="cuadro-blue"></div> */}
+                    <div className="cuadro-blue">
+                        <div className="sub-categorias-container">
+                            <div className="sub-categoria-muebles">
+                                <Link className="sub-categoria-link" to="/catalogo/muebles/muebles">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/beds-1320567788374647065.png" alt="logo_muebles"/>
+                                    Muebles
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Sofas</Link>
+                                    <Link className="sub-sub-categoria-link">Juegos de Sala</Link>
+                                    <Link className="sub-sub-categoria-link">Comedores</Link>
+                                    <Link className="sub-sub-categoria-link">Centros de Entretenimiento</Link>
+                                    <Link className="sub-sub-categoria-link">Sillas y Butacas</Link>
+                                    <Link className="sub-sub-categoria-link">Sillones Reclinables</Link>
+                                    <Link className="sub-sub-categoria-link">Bares</Link>
+                                    <Link className="sub-sub-categoria-link">Escritorio</Link>
+                                    <Link className="sub-sub-categoria-link">Estantes y libreros</Link>
+                                    <Link className="sub-sub-categoria-link">Roperos y Comodas</Link>
+                                    <Link className="sub-sub-categoria-link">Muebles de Cocina</Link>
+                            </div>
+                            <div className="sub-categoria-muebles-infantiles">
+                                <Link className="sub-categoria-link" to="/catalogo/muebles/muebles-infantiles">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/decor-1320567788997260783.png" alt="logo_muebles-infantiles"/>
+                                    Muebles Infantiles
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Cunas y camas para ninos</Link>
+                                    <Link className="sub-sub-categoria-link">Organizacion Infantil</Link>
+                                    <Link className="sub-sub-categoria-link">Sillas y Mesas</Link>
+                                    <Link className="sub-sub-categoria-link">Comodas y Cambiadores</Link>
+                            </div>
+                            <div className="sub-categoria-terrazas">
+                                <Link className="sub-categoria-link" to="/catalogo/muebles/terrazas">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/panels-1320567790219172468.png" alt="logo_terrazas"/>
+                                    Terrazas
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Sofas, Sillones y Mesas</Link>
+                                    <Link className="sub-sub-categoria-link">Complementos</Link>
+                                    <Link className="sub-sub-categoria-link">Toldos y Sombrillas</Link>
+                                    <Link className="sub-sub-categoria-link">Terrazas Pequenas</Link>
+                                    <Link className="sub-sub-categoria-link">Decoracion</Link>
+                            </div>
+                        </div>
+                        <div className="categoria-logo">
+                            <img className="categoria-muebles-logo-img" src="https://www.vippng.com/png/full/228-2283149_smith-brothers-sofa-mattress-brothers-living-rooms.png" alt="logo_muebles"/>
+                        </div>
+                    </div>
                 </li>
 
                 <li className="display-menu-item"><NavLink className="link-categorias" to="/catalogo/linea_blanca">Linea Blanca</NavLink>
-                {/* <div className="cuadro-blue"></div> */}
+                    <div className="cuadro-blue">
+                        <div className="sub-categorias-container">
+                            <div className="sub-categoria-refrigeracion">
+                                <Link className="sub-categoria-link" to="/catalogo/linea_blanca/refrigeracion">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/beds-1320567788374647065.png" alt="logo_refrigeracion"/>
+                                    Refrigeracion
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Refrigeradores</Link>
+                                    <Link className="sub-sub-categoria-link">Side by Side</Link>
+                                    <Link className="sub-sub-categoria-link">Frigobares</Link>
+                                    <Link className="sub-sub-categoria-link">Congeladores</Link>
+                            </div>
+                            <div className="sub-categoria-climatizacion">
+                                <Link className="sub-categoria-link" to="/catalogo/linea_blanca/climatizacion">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/decor-1320567788997260783.png" alt="logo_climatizacion"/>
+                                    Climatizacion
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Ventiladores</Link>
+                                    <Link className="sub-sub-categoria-link">Aires Acondicionados</Link>
+                                    <Link className="sub-sub-categoria-link">Calefactores</Link>
+                                    <Link className="sub-sub-categoria-link">Deshumedecedores</Link>
+                                    <Link className="sub-sub-categoria-link">Termas</Link>
+                                    <Link className="sub-sub-categoria-link">Duchas Electricas</Link>
+                            </div>
+                            <div className="sub-categoria-lavado">
+                                <Link className="sub-categoria-link" to="/catalogo/linea_blanca/lavado">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/panels-1320567790219172468.png" alt="logo_lavado"/>
+                                    Lavado
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Lavadoras</Link>
+                                    <Link className="sub-sub-categoria-link">Secadoras</Link>
+                                    <Link className="sub-sub-categoria-link">LavaSecas</Link>
+                                    <Link className="sub-sub-categoria-link">LavaVajillas</Link>
+                            </div>
+                            <div className="sub-categoria-cuidado-personal">
+                                <Link className="sub-categoria-link" to="/catalogo/linea_blanca/cuidado-personal">
+                                    <img className="sub-categoria-logo" src="https://icons-for-free.com/iconfiles/png/512/decor-1320567788997260783.png" alt="logo_cuidado_personal"/>
+                                    Climatizacion
+                                </Link>
+                                    <Link className="sub-sub-categoria-link">Depiladoras</Link>
+                                    <Link className="sub-sub-categoria-link">Secadoras de cabello</Link>
+                                    <Link className="sub-sub-categoria-link">Alisadoras y Rizadores</Link>
+                                    <Link className="sub-sub-categoria-link">Maquina de afeitar</Link>
+                                    <Link className="sub-sub-categoria-link">Cortadoras de Cabello</Link>
+                                    <Link className="sub-sub-categoria-link">Masajeadores</Link>
+                                    <Link className="sub-sub-categoria-link">Cuidado Facial</Link>
+                                    <Link className="sub-sub-categoria-link">Otros Cuidados Personales</Link>
+                            </div>
+                        </div>
+                        <div className="categoria-logo">
+                            <img className="categoria-muebles-logo-img" src="https://www.pngmart.com/files/8/Kitchen-PNG-Photo-Image.png" alt="logo_muebles"/>
+                        </div>
+                    </div>
                 </li>
 
                 <li className="display-menu-item"><NavLink className="link-categorias" to="/catalogo/deporte">Deporte</NavLink>

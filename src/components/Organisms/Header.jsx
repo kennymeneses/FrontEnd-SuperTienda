@@ -48,14 +48,14 @@ return(
                 </Link>
             </div>
 
-            <div className="container-nav">
-                <nav className="main-nav">
+            <div className="container-perfil">
+                <div className="main-perfil">
                 {
                     localStorage.getItem('token') ? 
                     <PrivateMenu />:
                     <PublicMenu />
                 }
-                </nav>
+                </div>
             </div>
 
 
