@@ -257,10 +257,39 @@ display:none;
   background-color: transparent;
   margin-top: auto;
   margin-bottom: auto;
-  border:0.5px solid purple;
   padding-left: 1rem;
   padding-right: 1rem;
   cursor:default;
+  }
+
+  .main-perfil-container{
+    display:flex;
+  }
+
+  .logo-usuario-logueado{
+    border-radius: 60%;
+    height: 2.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .cerrar-sesion-container{
+    display:flex;
+  }
+
+  .logo-cerrar-sesion{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .cerrar-sesion{
+    color:red;
+    font-weight: bold;
   }
 }
 
@@ -308,7 +337,7 @@ display:none;
 .box-modal-login{
   z-index:12;
   position:absolute;
-  margin-top: 2.8rem;
+  margin-top: 2.3rem;
   left:65.5%;
   width:25rem;
   height: 25rem;
@@ -318,7 +347,8 @@ display:none;
   display:flex;
   flex-direction: column;
 
-  animation: fadeInDown 0.45s ease-in-out forwards;
+  animation: fadeInDown 0.35s ease-in-out forwards;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes fadeInDown {
@@ -328,6 +358,12 @@ display:none;
       /* transform: rotateX(90deg); */
       height: 0rem;
    }
+
+   75% {
+    opacity: 1;
+    /* transform: rotateX(0deg); */
+    height: 33rem;      
+ }
    100% {
       opacity: 1;
       /* transform: rotateX(0deg); */
@@ -353,6 +389,7 @@ display:none;
   height:1.5rem;
   display:flex;
   align-self:flex-end;
+  margin-bottom: 0.5rem;
 }
 
 .logo-close-modal-login{
@@ -360,6 +397,127 @@ display:none;
   height: 100%;
 }
 
+.Title-modal-login{
+  display:flex;
+  align-self: center;
+  padding-bottom: 1rem;
+  
+}
+
+.border-title-modal-login{
+  border-bottom: 0.5px solid #dfdfe8;
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+.container-email-model-login{
+  border:solid 0.5px violet;
+  display:flex;
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+
+.email-model-login{
+  width: 75%;
+  height: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom: auto;
+
+  border: none; 
+  border-width: 0; 
+  box-shadow: none;
+
+  border-bottom: 1px solid #dfdfe8;
+  
+}
+
+.container-password-model-login{
+  border:solid 0.5px violet;
+  display:flex;
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+
+.password-model-login{
+  width: 75%;
+  height: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom: auto;
+
+  border: none; 
+  border-width: 0; 
+  box-shadow: none;
+
+  border-bottom: 1px solid #dfdfe8;
+}
+
+.container-submit-model-login{
+  border:solid 0.5px violet;
+  display:flex;
+  height: 2.5rem;
+  margin-top: 1rem;
+
+}
+
+.btnsend-model-login{
+  width: 75%;
+  height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom: auto;
+  background-color: #8fca00;
+  border-radius: 8px;
+  color:white;
+  font-weight: bold;
+}
+
+.container-error-model-login{
+  display:none;
+}
+
+.mensaje-error-login{
+  margin-left: auto;
+  margin-right: auto;
+  color:red;
+  font-weight: bold;
+}
+
+
+.modal-info-user{
+  display:none;
+}
+
+@media screen and (min-width:960px)
+{
+  .modal-info-user{
+    display:none;
+  }
+
+  .box-modal-info-user{
+    z-index:12;
+    position:absolute;
+    margin-top: 2.8rem;
+    margin-left:-5rem;
+    width:15rem;
+    height: 25rem;
+    background-color: white;
+    padding:0.5rem 1rem;
+    border-radius:16px;
+    display:flex;
+    flex-direction: column;
+  
+    animation: fadeInDown 0.35s ease-in-out forwards;
+    font-family: 'Poppins', sans-serif;
+    }
+}
 
 .display-menu-perfil-m{
     margin:auto;
@@ -392,12 +550,14 @@ display:none;
     margin:auto;
     border:none;
     display:flex;
+    margin-left: 1.5rem;
   }
 
   .link-nav-cart{
     margin:auto;
     border:none;
     display:flex;
+    margin-left: 1.5rem;
   }
 }
 

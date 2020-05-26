@@ -59,7 +59,7 @@ export const getallusers = ()=>dispatch =>{
 }
 
 export const getcategorie = (id) => dispatch => {
-    fetch(`http://localhost:5000/categorias/${id}`,params).then(response=>{return response.json()}).then(
+    fetch(`https://localhost:44369/api/categorias/${id}`,params).then(response=>{return response.json()}).then(
             response=>{
                 return dispatch({
                     type: GET_CATEGORIE,
@@ -69,7 +69,7 @@ export const getcategorie = (id) => dispatch => {
 }
 
 export const getsubcategorie = (id) => dispatch => {
-    fetch(`http://localhost:5000/subcategorias/${id}`,params).then(response=>{return response.json()}).then(
+    fetch(`https://localhost:44369/api/subcategorias/${id}`,params).then(response=>{return response.json()}).then(
             response=>{
                 return dispatch({
                     type: GET_SUBCATEGORIE,
@@ -79,7 +79,7 @@ export const getsubcategorie = (id) => dispatch => {
 }
 
 export const getsubsubcategorie = (id) => dispatch => {
-    fetch(`http://localhost:5000/subsubcategorias/${id}`,params).then(response=>{return response.json()}).then(
+    fetch(`https://localhost:44369/api/subsubcategorias/${id}`,params).then(response=>{return response.json()}).then(
             response=>{
                 return dispatch({
                     type: GET_SUBSUBCATEGORIE,
@@ -89,7 +89,7 @@ export const getsubsubcategorie = (id) => dispatch => {
 }
 
 export const getproduct = (id) => dispatch => {
-    fetch(`http://localhost:5000/productos/${id}`,params).then(response=>{return response.json()}).then(
+    fetch(`https://localhost:44369/api/productos/${id}`,params).then(response=>{return response.json()}).then(
             response=>{
                 return dispatch({
                     type: GET_PRODUCT,
@@ -99,7 +99,7 @@ export const getproduct = (id) => dispatch => {
 }
 
 export const getuser = (id) => dispatch => {
-    fetch(`http://localhost:5000/usuarios/${id}`,params).then(response=>{return response.json()}).then(
+    fetch(`https://localhost:44369/api/usuarios/${id}`,params).then(response=>{return response.json()}).then(
             response=>{
                 return dispatch({
                     type: GET_USER,

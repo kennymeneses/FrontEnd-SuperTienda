@@ -1,4 +1,4 @@
-export const estilo_modal=(obj)=>{
+export const mostrar_modal=(obj)=>{
 
     obj.style.display="block"
 
