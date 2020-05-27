@@ -1,6 +1,6 @@
 export const mostrar_modal=(obj)=>{
 
-    obj.style.display="block"
+    obj.style.display="flex"
 
 }
 
