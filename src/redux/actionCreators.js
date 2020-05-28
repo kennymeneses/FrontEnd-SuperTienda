@@ -1,4 +1,4 @@
-import {GET_ALL_CATEGORIES, GET_ALL_SUBCATEGORIES, GET_ALL_SUBSUBCATEGORIES, GET_ALL_PRODUCTS, GET_ALL_USERS,
+import {GET_ALL_CATEGORIES, GET_ALL_SUBCATEGORIES, GET_ALL_SUBSUBCATEGORIES, GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_SIMILARLY, GET_ALL_USERS,
        GET_CATEGORIE, GET_SUBCATEGORIE, GET_SUBSUBCATEGORIE, GET_PRODUCT, GET_USER} from './actions'
 
 const params = {
@@ -44,6 +44,16 @@ export const getallproducts = ()=>dispatch =>{
                 return dispatch({
                     type: GET_ALL_PRODUCTS,
                     products:response.data
+        })
+    })
+}
+
+export const getallproductsx = (string)=>dispatch =>{
+    fetch(`https://localhost:44369/api/productos?texto=${string}&idsubsubcategoria=6&tamanio=8&pagina=1`,params).then(response=>{return response.json()}).then(
+            response=>{
+                return dispatch({
+                    type: GET_ALL_PRODUCTS_SIMILARLY,
+                    productss: response.data
         })
     })
 }

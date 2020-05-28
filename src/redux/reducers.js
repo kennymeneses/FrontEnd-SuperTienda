@@ -1,4 +1,4 @@
-import {GET_ALL_CATEGORIES, GET_ALL_SUBCATEGORIES, GET_ALL_SUBSUBCATEGORIES, GET_ALL_PRODUCTS, GET_ALL_USERS,
+import {GET_ALL_CATEGORIES, GET_ALL_SUBCATEGORIES, GET_ALL_SUBSUBCATEGORIES, GET_ALL_PRODUCTS,GET_ALL_PRODUCTS_SIMILARLY, GET_ALL_USERS,
        GET_CATEGORIE, GET_SUBCATEGORIE, GET_SUBSUBCATEGORIE, GET_PRODUCT, GET_USER} from "./actions"
 
 export const categoriaReducer = (state = {}, action) => {
@@ -60,6 +60,13 @@ export const productoReducer = (state={}, action) =>{
         return {
             ...state,
             products : action.products
+        }
+    }
+
+    if(action.type ===GET_ALL_PRODUCTS_SIMILARLY){
+        return {
+            ...state,
+            productss :action.productss
         }
     }
 

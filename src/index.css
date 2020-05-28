@@ -1268,13 +1268,13 @@ display: none;
 
 
 /*#region Home */
-.page-content-home{
+.page-content{
   display:none;
 }
 
 @media screen and (min-width:960px)
 {
-  .page-content-home{
+  .page-content{
     background-color: aqua;
     margin-top: 7rem;
     display:flex;

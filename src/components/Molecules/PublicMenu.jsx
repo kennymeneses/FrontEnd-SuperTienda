@@ -30,7 +30,7 @@ const [error, setError] = useState("");
 
         const url = 'https://localhost:44369/api/login';
 
-        fetch(url,miinit).then(r=>{console.log(r); return r.json()}).then(r=>{if(r.apiEstado == "error"){setError(r.apiMensaje);aviso_error.current.style.display="flex"}
+        fetch(url,miinit).then(r=>{console.log(r); return r.json()}).then(r=>{if(r.apiEstado === "error"){setError(r.apiMensaje);aviso_error.current.style.display="flex"}
                 else{console.log(r);aviso_error.current.style.display="none"; localStorage.setItem('token', r.token);localStorage.setItem('idUsuario',r.id);setError('');window.location="/";console.log('Se inicio sesion!')}})
     }
 
