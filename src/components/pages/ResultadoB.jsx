@@ -24,8 +24,17 @@ const ResultadoB=({ProductsFind})=>{
         
         {
             return(
-            <div className="page-content">
-                {ProductsFind[0].nombreproducto}
+            <div className="page-content-busqueda">
+                {/* {ProductsFind[0].nombreproducto} */}
+                {ProductsFind.map(e=>(
+                    <div className="container-resultados">
+                        <img className="img-resultados" src={e.imagenurl} alt={e.nombreproducto}/>
+                        <div>{e.nombreproducto}</div>
+                        <div>{e.codigo}</div>
+                        <div>{e.fabricante}</div>
+                        
+                    </div>
+                ))}
             </div>
             )
         }
