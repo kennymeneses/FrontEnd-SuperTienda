@@ -29,10 +29,20 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+   0% {
+      opacity: 0;
+      /* transform: rotateX(90deg); */
+      height: 0rem;
+   }
+
+   75% {
+    opacity: 1;
+    /* transform: rotateX(0deg); */
+    height: 33rem;      
+ }
+   100% {
+      opacity: 1;
+      /* transform: rotateX(0deg); */
+      height: 25rem;      
+   }
 }

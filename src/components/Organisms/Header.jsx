@@ -1,7 +1,6 @@
 import React, { useRef, useEffect} from 'react'
-import { NavLink, Link, Redirect } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { mostrar_modal } from '../Molecules/scripts'
 import store from '../../redux/store'
 import PrivateMenu from '../Molecules/PrivateMenu'
 import PublicMenu from '../Molecules/PublicMenu'
@@ -17,6 +16,7 @@ const Hola = (parametro)=>{
 const Header = ({ProductsFind})=>{
 
 const input_busqueda = useRef(null)
+const input_busqueda_m = useRef(null)
 
     useEffect(() => {
        
@@ -77,9 +77,9 @@ return(
         </div>
 
         <div className="mobil-busqueda-container">
-        <input className="banner-busqueda-2" type="text" placeholder="Buscar Producto"/>
+            <input className="banner-busqueda-2" ref={input_busqueda_m} type="text" placeholder="Buscar Producto"/>
                 
-                <Link to ="/" className="link-m-logo-busqueda">
+                <Link to ="/busqueda" className="link-m-logo-busqueda" onClick={()=>{Hola(input_busqueda_m.current.value)}}>
                 <img
                     className="icon-busqueda-2" 
                     src="https://iconbug.com/data/e2/507/3940585a2d442b4a263055de85b1318f.png" 

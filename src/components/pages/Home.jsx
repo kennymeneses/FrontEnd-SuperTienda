@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Cargando from '../Molecules/Cargando'
 
 const Home = ()=>(
 
     <div className="page-content">
-        Home
+        <Cargando/>
     </div>
 
 )
